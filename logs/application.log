@@ -1,0 +1,307 @@
+[WARN ] [2023-04-11T11:53:50,544] [HikariPool-1 housekeeper] [HikariPool] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4d19h45m49s880ms905µs200ns). 
+[INFO ] [2023-04-11T12:44:43,090] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T12:44:43,157] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T12:44:43,214] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2023-04-11T12:44:51,731] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2023-04-11T12:44:51,783] [main] [Application] Starting Application using Java 19.0.1 on DESKTOP-MI5564E with PID 18552 (C:\Users\Tadeu\Downloads\interview-pleno\core\target\classes started by Tadeu in C:\Users\Tadeu\Downloads\interview-pleno) 
+[INFO ] [2023-04-11T12:44:51,790] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2023-04-11T12:44:52,742] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:44:52,744] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:44:52,777] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.hero.HeroRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:44:52,779] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.powerstats.PowerStatsRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:44:52,780] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 29 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2023-04-11T12:44:52,792] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:44:52,793] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:44:52,827] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2023-04-11T12:44:53,535] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2023-04-11T12:44:53,547] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2023-04-11T12:44:53,548] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:44:53,549] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2023-04-11T12:44:53,550] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2023-04-11T12:44:53,677] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2023-04-11T12:44:53,678] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1811 ms 
+[INFO ] [2023-04-11T12:44:53,917] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2023-04-11T12:44:54,206] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2023-04-11T12:44:54,235] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2023-04-11T12:44:54,235] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 15.2) 
+[WARN ] [2023-04-11T12:44:54,245] [main] [Database] Flyway upgrade recommended: PostgreSQL 15.2 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2023-04-11T12:44:54,441] [main] [DbValidate] Successfully validated 2 migrations (execution time 00:00.074s) 
+[INFO ] [2023-04-11T12:44:54,456] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2023-04-11T12:44:54,458] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2023-04-11T12:44:54,624] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2023-04-11T12:44:54,728] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2023-04-11T12:44:55,000] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2023-04-11T12:44:55,187] [main] [Dialect] HHH000400: Using dialect: br.com.gubee.interview.config.CustomPostgreSQLDialect 
+[INFO ] [2023-04-11T12:44:55,810] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2023-04-11T12:44:55,821] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2023-04-11T12:44:57,622] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2023-04-11T12:44:58,715] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:44:58,756] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2023-04-11T12:44:58,772] [main] [Application] Started Application in 7.384 seconds (JVM running for 8.89) 
+[INFO ] [2023-04-11T12:45:55,539] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:45:55,546] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:45:55,636] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 89 ms 
+[INFO ] [2023-04-11T12:50:01,952] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T12:50:01,969] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T12:50:01,988] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2023-04-11T12:50:12,608] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2023-04-11T12:50:12,665] [main] [Application] Starting Application using Java 19.0.1 on DESKTOP-MI5564E with PID 4964 (C:\Users\Tadeu\Downloads\interview-pleno\core\target\classes started by Tadeu in C:\Users\Tadeu\Downloads\interview-pleno) 
+[INFO ] [2023-04-11T12:50:12,671] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2023-04-11T12:50:13,549] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:50:13,550] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:50:13,583] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.hero.HeroRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:50:13,585] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.powerstats.PowerStatsRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:50:13,585] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 29 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2023-04-11T12:50:13,598] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:50:13,600] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:50:13,637] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2023-04-11T12:50:14,346] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2023-04-11T12:50:14,356] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2023-04-11T12:50:14,357] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:50:14,358] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2023-04-11T12:50:14,358] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2023-04-11T12:50:14,475] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2023-04-11T12:50:14,475] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1736 ms 
+[INFO ] [2023-04-11T12:50:14,797] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2023-04-11T12:50:15,085] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2023-04-11T12:50:15,110] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2023-04-11T12:50:15,111] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 15.2) 
+[WARN ] [2023-04-11T12:50:15,123] [main] [Database] Flyway upgrade recommended: PostgreSQL 15.2 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2023-04-11T12:50:15,287] [main] [DbValidate] Successfully validated 2 migrations (execution time 00:00.041s) 
+[INFO ] [2023-04-11T12:50:15,308] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2023-04-11T12:50:15,310] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2023-04-11T12:50:15,452] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2023-04-11T12:50:15,573] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2023-04-11T12:50:15,875] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2023-04-11T12:50:16,009] [main] [Dialect] HHH000400: Using dialect: br.com.gubee.interview.config.CustomPostgreSQLDialect 
+[INFO ] [2023-04-11T12:50:16,619] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2023-04-11T12:50:16,626] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2023-04-11T12:50:17,068] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2023-04-11T12:50:17,552] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:50:17,583] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2023-04-11T12:50:17,595] [main] [Application] Started Application in 5.31 seconds (JVM running for 6.778) 
+[INFO ] [2023-04-11T12:50:43,903] [http-nio-8080-exec-1] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:50:43,904] [http-nio-8080-exec-1] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:50:43,905] [http-nio-8080-exec-1] [DispatcherServlet] Completed initialization in 1 ms 
+[WARN ] [2023-04-11T12:50:59,948] [http-nio-8080-exec-3] [DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'name' for method parameter type String is not present] 
+[WARN ] [2023-04-11T12:51:07,800] [http-nio-8080-exec-5] [DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'name' for method parameter type String is not present] 
+[INFO ] [2023-04-11T12:54:49,266] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T12:54:49,348] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T12:54:49,391] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2023-04-11T12:54:57,415] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2023-04-11T12:54:57,474] [main] [Application] Starting Application using Java 19.0.1 on DESKTOP-MI5564E with PID 9996 (C:\Users\Tadeu\Downloads\interview-pleno\core\target\classes started by Tadeu in C:\Users\Tadeu\Downloads\interview-pleno) 
+[INFO ] [2023-04-11T12:54:57,479] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2023-04-11T12:54:58,529] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:54:58,532] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:54:58,580] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.hero.HeroRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:54:58,583] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.powerstats.PowerStatsRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:54:58,584] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 43 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2023-04-11T12:54:58,599] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:54:58,600] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:54:58,652] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2023-04-11T12:54:59,835] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2023-04-11T12:54:59,848] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2023-04-11T12:54:59,849] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:54:59,850] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2023-04-11T12:54:59,850] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2023-04-11T12:54:59,979] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2023-04-11T12:54:59,979] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2427 ms 
+[INFO ] [2023-04-11T12:55:00,482] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2023-04-11T12:55:01,046] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2023-04-11T12:55:01,072] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2023-04-11T12:55:01,072] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 15.2) 
+[WARN ] [2023-04-11T12:55:01,085] [main] [Database] Flyway upgrade recommended: PostgreSQL 15.2 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2023-04-11T12:55:01,508] [main] [DbValidate] Successfully validated 2 migrations (execution time 00:00.043s) 
+[INFO ] [2023-04-11T12:55:01,520] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2023-04-11T12:55:01,522] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2023-04-11T12:55:01,672] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2023-04-11T12:55:01,781] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2023-04-11T12:55:02,129] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2023-04-11T12:55:02,419] [main] [Dialect] HHH000400: Using dialect: br.com.gubee.interview.config.CustomPostgreSQLDialect 
+[INFO ] [2023-04-11T12:55:03,257] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2023-04-11T12:55:03,265] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2023-04-11T12:55:03,731] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2023-04-11T12:55:04,428] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:55:04,465] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2023-04-11T12:55:04,480] [main] [Application] Started Application in 7.488 seconds (JVM running for 9.43) 
+[INFO ] [2023-04-11T12:55:40,862] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T12:55:40,866] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T12:55:40,873] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2023-04-11T12:55:50,118] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2023-04-11T12:55:50,193] [main] [Application] Starting Application using Java 19.0.1 on DESKTOP-MI5564E with PID 8960 (C:\Users\Tadeu\Downloads\interview-pleno\core\target\classes started by Tadeu in C:\Users\Tadeu\Downloads\interview-pleno) 
+[INFO ] [2023-04-11T12:55:50,199] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2023-04-11T12:55:51,300] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:55:51,302] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:55:51,354] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.hero.HeroRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:55:51,357] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.powerstats.PowerStatsRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:55:51,359] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 49 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2023-04-11T12:55:51,374] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:55:51,376] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:55:51,423] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2023-04-11T12:55:52,495] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2023-04-11T12:55:52,509] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2023-04-11T12:55:52,510] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:55:52,511] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2023-04-11T12:55:52,512] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2023-04-11T12:55:52,703] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2023-04-11T12:55:52,703] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2441 ms 
+[INFO ] [2023-04-11T12:55:52,945] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2023-04-11T12:55:53,298] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2023-04-11T12:55:53,329] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2023-04-11T12:55:53,330] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 15.2) 
+[WARN ] [2023-04-11T12:55:53,347] [main] [Database] Flyway upgrade recommended: PostgreSQL 15.2 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2023-04-11T12:55:53,620] [main] [DbValidate] Successfully validated 2 migrations (execution time 00:00.077s) 
+[INFO ] [2023-04-11T12:55:53,639] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2023-04-11T12:55:53,641] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2023-04-11T12:55:53,960] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2023-04-11T12:55:54,236] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2023-04-11T12:55:54,886] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2023-04-11T12:55:55,178] [main] [Dialect] HHH000400: Using dialect: br.com.gubee.interview.config.CustomPostgreSQLDialect 
+[INFO ] [2023-04-11T12:55:56,191] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2023-04-11T12:55:56,202] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2023-04-11T12:55:56,908] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2023-04-11T12:55:57,722] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:55:57,764] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2023-04-11T12:55:57,778] [main] [Application] Started Application in 8.079 seconds (JVM running for 15.331) 
+[INFO ] [2023-04-11T12:56:04,342] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:56:04,342] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:56:04,344] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 2 ms 
+[WARN ] [2023-04-11T12:56:04,452] [http-nio-8080-exec-2] [DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'name' for method parameter type String is not present] 
+[INFO ] [2023-04-11T12:57:10,001] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T12:57:10,024] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T12:57:10,046] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2023-04-11T12:57:20,041] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2023-04-11T12:57:20,113] [main] [Application] Starting Application using Java 19.0.1 on DESKTOP-MI5564E with PID 3656 (C:\Users\Tadeu\Downloads\interview-pleno\core\target\classes started by Tadeu in C:\Users\Tadeu\Downloads\interview-pleno) 
+[INFO ] [2023-04-11T12:57:20,123] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2023-04-11T12:57:21,392] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:57:21,394] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:57:21,445] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.hero.HeroRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:57:21,448] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.powerstats.PowerStatsRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T12:57:21,449] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 46 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2023-04-11T12:57:21,463] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T12:57:21,464] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T12:57:21,517] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2023-04-11T12:57:22,609] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2023-04-11T12:57:22,626] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2023-04-11T12:57:22,626] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:57:22,627] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2023-04-11T12:57:22,628] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2023-04-11T12:57:22,814] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2023-04-11T12:57:22,816] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2610 ms 
+[INFO ] [2023-04-11T12:57:23,084] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2023-04-11T12:57:23,440] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2023-04-11T12:57:23,475] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2023-04-11T12:57:23,476] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 15.2) 
+[WARN ] [2023-04-11T12:57:23,489] [main] [Database] Flyway upgrade recommended: PostgreSQL 15.2 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2023-04-11T12:57:23,732] [main] [DbValidate] Successfully validated 2 migrations (execution time 00:00.068s) 
+[INFO ] [2023-04-11T12:57:23,745] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2023-04-11T12:57:23,746] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2023-04-11T12:57:23,917] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2023-04-11T12:57:24,120] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2023-04-11T12:57:25,805] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2023-04-11T12:57:26,048] [main] [Dialect] HHH000400: Using dialect: br.com.gubee.interview.config.CustomPostgreSQLDialect 
+[INFO ] [2023-04-11T12:57:26,855] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2023-04-11T12:57:26,866] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2023-04-11T12:57:27,483] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2023-04-11T12:57:28,129] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T12:57:28,176] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2023-04-11T12:57:28,194] [main] [Application] Started Application in 8.574 seconds (JVM running for 11.093) 
+[INFO ] [2023-04-11T12:59:36,418] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:59:36,425] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T12:59:36,494] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 68 ms 
+[INFO ] [2023-04-11T13:27:12,004] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T13:27:12,055] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T13:27:12,085] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2023-04-11T13:27:32,830] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2023-04-11T13:27:32,889] [main] [Application] Starting Application using Java 19.0.1 on DESKTOP-MI5564E with PID 7232 (C:\Users\Tadeu\Downloads\interview-pleno\core\target\classes started by Tadeu in C:\Users\Tadeu\Downloads\interview-pleno) 
+[INFO ] [2023-04-11T13:27:32,898] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2023-04-11T13:27:33,893] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T13:27:33,895] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T13:27:33,951] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.hero.HeroRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T13:27:33,953] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.features.powerstats.PowerStatsRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2023-04-11T13:27:33,954] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 48 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2023-04-11T13:27:33,964] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2023-04-11T13:27:33,966] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2023-04-11T13:27:34,011] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2023-04-11T13:27:34,868] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2023-04-11T13:27:34,884] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2023-04-11T13:27:34,885] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T13:27:34,886] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2023-04-11T13:27:34,887] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2023-04-11T13:27:35,084] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2023-04-11T13:27:35,087] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2117 ms 
+[INFO ] [2023-04-11T13:27:35,411] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2023-04-11T13:27:35,814] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2023-04-11T13:27:35,857] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2023-04-11T13:27:35,858] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 15.2) 
+[WARN ] [2023-04-11T13:27:35,875] [main] [Database] Flyway upgrade recommended: PostgreSQL 15.2 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2023-04-11T13:27:36,161] [main] [DbValidate] Successfully validated 2 migrations (execution time 00:00.064s) 
+[INFO ] [2023-04-11T13:27:36,175] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2023-04-11T13:27:36,177] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2023-04-11T13:27:36,370] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2023-04-11T13:27:36,567] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2023-04-11T13:27:37,198] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2023-04-11T13:27:37,605] [main] [Dialect] HHH000400: Using dialect: br.com.gubee.interview.config.CustomPostgreSQLDialect 
+[INFO ] [2023-04-11T13:27:38,654] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2023-04-11T13:27:38,666] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2023-04-11T13:27:39,305] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2023-04-11T13:27:39,937] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2023-04-11T13:27:39,978] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2023-04-11T13:27:39,991] [main] [Application] Started Application in 7.525 seconds (JVM running for 9.341) 
+[INFO ] [2023-04-11T13:30:26,253] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T13:30:26,254] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2023-04-11T13:30:26,260] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 5 ms 
+[ERROR] [2023-04-11T13:30:29,879] [http-nio-8080-exec-2] [[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class org.springframework.http.ResponseEntity cannot be cast to class java.util.List (org.springframework.http.ResponseEntity is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')] with root cause 
+java.lang.ClassCastException: class org.springframework.http.ResponseEntity cannot be cast to class java.util.List (org.springframework.http.ResponseEntity is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+	at br.com.gubee.interview.core.features.hero.HeroController.getHeroByName(HeroController.java:42) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[INFO ] [2023-04-11T13:35:09,621] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2023-04-11T13:35:09,624] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2023-04-11T13:35:09,631] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
