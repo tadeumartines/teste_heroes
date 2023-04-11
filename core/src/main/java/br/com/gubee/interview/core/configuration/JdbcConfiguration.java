@@ -38,16 +38,6 @@ public class JdbcConfiguration {
         return dataSource;
     }
 
-//    @Bean
-//    public PlatformTransactionManager platformTransactionManager() {
-//        return new DataSourceTransactionManager(dataSource());
-//    }
-//
-//    @Bean
-//    public NamedParameterJdbcTemplate namedParameterJdbcTemplate() {
-//        return new NamedParameterJdbcTemplate(dataSource());
-//    }
-
     /**
      * Identifies how many connections can be opened based on Postgres recommended formula.
      *

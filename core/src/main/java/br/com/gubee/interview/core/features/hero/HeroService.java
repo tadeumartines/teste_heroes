@@ -68,8 +68,6 @@ public class HeroService {
                 CreateHeroRequest heroRequest = mapperToCreateHeroRequest(hero,powerStats.get());
                 createHeroRequest.add(heroRequest);
             });
-           // Optional<PowerStats> powerStats = powerStatsRepository.findById(hero.getPowerStatsId());
-            //CreateHeroRequest createHeroRequest = mapperToCreateHeroRequest(hero,powerStats.get());
             return createHeroRequest;
         } catch (Exception e) {
             return (List<CreateHeroRequest>) ResponseEntity.notFound().build();
@@ -89,7 +87,4 @@ public class HeroService {
         heroRepository.deleteById(id);
     }
 
-//    public CreateHeroRequest compareHeroesById(UUID id1, UUID id2) {
-//        return heroRepository.compareHeroesById(id1, id2);
-//    }
 }

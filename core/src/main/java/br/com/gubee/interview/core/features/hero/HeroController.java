@@ -3,6 +3,7 @@ package br.com.gubee.interview.core.features.hero;
 import br.com.gubee.interview.model.Hero;
 import br.com.gubee.interview.model.request.CreateHeroRequest;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.jdbc.core.JdbcAggregateOperations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public class HeroController {
 
     private final HeroService heroService;
+    private final HeroRepository heroRepository;
 
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<UUID> create(@RequestBody CreateHeroRequest createHeroRequest) {
@@ -49,9 +51,22 @@ public class HeroController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-//    @GetMapping(path="/compare/{id1}/{id2}")
-//    public ResponseEntity<CreateHeroRequest> compareHeroesById(@PathVariable(name = "id1") UUID id1, @PathVariable(name = "id2") UUID id2){
-//        CreateHeroRequest statsComparados = heroService.compareHeroesById(id1, id2);
-//        return new ResponseEntity<>(statsComparados, HttpStatus.OK);
-//    }
+    /*
+    @PutMapping(path = "/{id}")
+    public ResponseEntity<UUID> updateHero(@PathVariable UUID id, @RequestBody CreateHeroRequest createHeroRequest) {
+        return heroRepository.findById(id)
+                .map(hero -> {
+                    hero.setName(createHeroRequest.getName());
+                    hero.setRace(createHeroRequest.getRace());
+                    hero.setAgility(createHeroRequest.getAgility());
+                    hero.setAgility(createHeroRequest.getAgility());
+                    hero.setAgility(createHeroRequest.getAgility());
+                    hero.setAgility(createHeroRequest.getAgility());
+                    CreateHeroRequest updated = heroRepository.save(hero);
+                    return ResponseEntity.ok().body(updated);
+                }).orElse(ResponseEntity.notFound().build());
+    }
+
+     */
+
 }
