@@ -1,4 +1,4 @@
-package br.com.gubee.interview.model.request;
+package br.com.gubee.interview.model.dto;
 
 import br.com.gubee.interview.model.enums.Race;
 import lombok.AllArgsConstructor;
@@ -19,7 +19,7 @@ import static lombok.AccessLevel.PRIVATE;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = PRIVATE)
-public class CreateHeroRequest {
+public class HeroDto {
 
     private UUID id;
 
@@ -33,21 +33,21 @@ public class CreateHeroRequest {
     @Min(value = 0, message = "message.powerstats.strength.min")
     @Max(value = 10, message = "message.powerstats.strength.max")
     @NotNull(message = "message.powerstats.strength.mandatory")
-    private int strength;
+    private Integer strength;
 
     @Min(value = 0, message = "message.powerstats.agility.min")
     @Max(value = 10, message = "message.powerstats.agility.max")
     @NotNull(message = "message.powerstats.agility.mandatory")
-    private int agility;
+    private Integer agility;
 
     @Min(value = 0, message = "message.powerstats.dexterity.min")
     @Max(value = 10, message = "message.powerstats.dexterity.max")
     @NotNull(message = "message.powerstats.dexterity.mandatory")
-    private int dexterity;
+    private Integer dexterity;
 
     @Min(value = 0, message = "message.powerstats.intelligence.min")
     @Max(value = 10, message = "message.powerstats.intelligence.max")
     @NotNull(message = "message.powerstats.intelligence.mandatory")
-    private int intelligence;
+    private Integer intelligence;
 
 }

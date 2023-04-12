@@ -1,6 +1,6 @@
 package br.com.gubee.interview.model;
 
-import br.com.gubee.interview.model.request.CreateHeroRequest;
+import br.com.gubee.interview.model.dto.HeroDto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -49,9 +49,9 @@ public class Hero {
     private boolean enabled;
 
 
-    public Hero(CreateHeroRequest createHeroRequest, UUID powerStatsId) {
-        this.name = createHeroRequest.getName();
-        this.race = String.valueOf(createHeroRequest.getRace());
+    public Hero(HeroDto heroDto, UUID powerStatsId) {
+        this.name = heroDto.getName();
+        this.race = String.valueOf(heroDto.getRace());
         this.enabled = true;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();

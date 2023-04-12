@@ -1,9 +1,9 @@
 package br.com.gubee.interview.core.features.hero;
 
-import br.com.gubee.interview.model.Hero;
-import br.com.gubee.interview.model.request.CreateHeroRequest;
+import br.com.gubee.interview.model.dto.ComparedHeroDto;
+import br.com.gubee.interview.model.dto.HeroDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.jdbc.core.JdbcAggregateOperations;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,50 +23,43 @@ public class HeroController {
     private final HeroRepository heroRepository;
 
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
-    public ResponseEntity<UUID> create(@RequestBody CreateHeroRequest createHeroRequest) {
-        UUID heroId = heroService.createHero(createHeroRequest);
+    public ResponseEntity<UUID> create(@RequestBody HeroDto heroDto) {
+        UUID heroId = heroService.createHero(heroDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(heroId);
     }
 
     @GetMapping()
-    public ResponseEntity<List<CreateHeroRequest>> getAllHeroes(){
-        List<CreateHeroRequest> hero = heroService.findAllHeroes();
+    public ResponseEntity<List<HeroDto>> getAllHeroes(){
+        List<HeroDto> hero = heroService.findAllHeroes();
         return new ResponseEntity<>(hero, HttpStatus.OK);
     }
 
     @GetMapping(path="/id/{id}")
-    public Optional<CreateHeroRequest> getHeroById(@PathVariable UUID id){
-        return heroService.getHeroById(id).getBody();
+    public ResponseEntity<Optional<HeroDto>> getHeroById(@PathVariable UUID id){
+        return heroService.getHeroById(id);
     }
 
     @GetMapping(path="/name/{name}")
-    public ResponseEntity<List<CreateHeroRequest>> getHeroByName(@PathVariable String name){
-        List<CreateHeroRequest> hero = heroService.getHeroByName(name);
+    public ResponseEntity<List<HeroDto>> getHeroByName(@PathVariable String name){
+        List<HeroDto> hero = heroService.getHeroByName(name);
         return new ResponseEntity<>(hero, HttpStatus.OK);
     }
 
     @DeleteMapping(path = "/delete/hero/{id}")
     public ResponseEntity<Void> deleteHeroById(@PathVariable UUID id){
-        heroService.deleteHeroById(id);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return heroService.deleteHeroById(id);
     }
 
-    /*
-    @PutMapping(path = "/{id}")
-    public ResponseEntity<UUID> updateHero(@PathVariable UUID id, @RequestBody CreateHeroRequest createHeroRequest) {
-        return heroRepository.findById(id)
-                .map(hero -> {
-                    hero.setName(createHeroRequest.getName());
-                    hero.setRace(createHeroRequest.getRace());
-                    hero.setAgility(createHeroRequest.getAgility());
-                    hero.setAgility(createHeroRequest.getAgility());
-                    hero.setAgility(createHeroRequest.getAgility());
-                    hero.setAgility(createHeroRequest.getAgility());
-                    CreateHeroRequest updated = heroRepository.save(hero);
-                    return ResponseEntity.ok().body(updated);
-                }).orElse(ResponseEntity.notFound().build());
+    @PutMapping("/{heroId}")
+    public ResponseEntity<Void> updateHero(@PathVariable UUID heroId, @RequestBody HeroDto heroDto) throws ChangeSetPersister.NotFoundException {
+
+        return heroService.updateHero(heroId, heroDto);
     }
 
-     */
+    @GetMapping("/{hero1}/{hero2}")
+    public ResponseEntity<ComparedHeroDto> compareHeroes(@PathVariable UUID hero1, @PathVariable UUID hero2 ) throws ChangeSetPersister.NotFoundException {
+        ComparedHeroDto comparedHeroDto = heroService.compareHeroes(hero1,hero2);
+        return new ResponseEntity<>(comparedHeroDto,HttpStatus.OK);
+    }
 
 }

@@ -1,6 +1,6 @@
 package br.com.gubee.interview.model;
 
-import br.com.gubee.interview.model.request.CreateHeroRequest;
+import br.com.gubee.interview.model.dto.HeroDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
@@ -47,11 +45,11 @@ public class PowerStats {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    public PowerStats(CreateHeroRequest createHeroRequest) {
-        this.strength = createHeroRequest.getStrength();
-        this.agility = createHeroRequest.getAgility();
-        this.dexterity = createHeroRequest.getDexterity();
-        this.intelligence = createHeroRequest.getIntelligence();
+    public PowerStats(HeroDto heroDto) {
+        this.strength = heroDto.getStrength();
+        this.agility = heroDto.getAgility();
+        this.dexterity = heroDto.getDexterity();
+        this.intelligence = heroDto.getIntelligence();
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
